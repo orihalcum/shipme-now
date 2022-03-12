@@ -1,0 +1,111 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap');
+
+/* Root */
+
+:root {
+  font-size: 16px;
+}
+
+/* Body */
+
+html,
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0;
+    color: inherit;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.6rem; }
+h3 { font-size: 2.1rem; }
+h4 { font-size: 1.7rem; }
+h5 { font-size: 1.3rem; }
+h6 { font-size: 1rem; }
+
+/* paragraph */
+
+p {
+    font-size: 1rem;
+    margin: 0 0 15px;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5em;
+}
+
+b { font-weight: 800; }
+
+ol, ul, dl { margin-bottom: 0 !important }
+
+// RESPONSIVE
+
+  @media only screen and (max-width: 767px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 { line-height: 1.5em; }
+  }
+  
+// EXTRA SMALL
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: $font-size-xs;
+  }
+}
+
+// SMALL
+@media only screen and (min-width: 576px) {
+  :root {
+    font-size: $font-size-sm;
+  }
+}
+
+// MEDIUM
+@media only screen and (min-width: 768px) {
+  :root {
+    font-size: $font-size-md;
+  }
+}
+
+// LARGE
+@media only screen and (min-width: 992px) {
+  :root {
+    font-size: $font-size-lg;
+  }
+}
+
+// EXTRA LARGE
+@media only screen and (min-width: 1200px) {
+}
+
+// EXTRA EXTRA-LARGE
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1300px;
+  }
+}

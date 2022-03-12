@@ -1,0 +1,29 @@
+.main-footer {
+  font-size: 1rem;
+  .container {
+    @include flex-space-between-center;
+    border-top: 1px solid $border-grey;
+  }
+  &__contact-us {
+    &__phone, &__instagram {
+      margin-top: 5px;
+      a {
+        color: $color-black !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .main-footer {
+    .container {
+      flex-direction: column;
+    }
+    &__contact-us {
+      text-align: center;
+      &__wrapper {
+        display: flex;
+      }
+    }
+  }
+}

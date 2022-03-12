@@ -1,0 +1,37 @@
+// Sizes
+.ant-btn {
+  border-radius: $border-radius;
+  height: $form-height;
+}
+
+.ant-btn-sm {
+  border-radius: $border-radius-sm;
+  height: $form-height-sm;
+}
+
+.ant-btn-lg {
+  border-radius: $border-radius-lg;
+  height: $form-height-lg;
+  font-size: 1.2rem;
+}
+
+
+// Colors
+.ant-btn-primary {
+  color: $color-secondary;
+  &:hover {
+    color: rgba(2,38,86, .5);
+  }
+  &:focus {
+    color: #022656;
+    background-color: #ceb16c;
+    border-color: #ceb16c;
+  }
+}
+
+@media (max-width: 720px) {
+  .ant-btn-lg {
+    border-radius: $border-radius;
+    height: $form-height-lg;
+  }
+}

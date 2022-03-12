@@ -1,0 +1,8 @@
+.ant-input-number {
+  border-radius: $border-radius;
+  height: $form-height;
+}
+
+.ant-input-number-input-wrap {
+  @include adjust-input-wrap;
+}

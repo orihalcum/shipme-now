@@ -1,0 +1,18 @@
+.service-section {
+  .section-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: $color-dark-grey;
+  }
+  &__image {}
+}
+
+@media (min-width: 520px) and (max-width: 720px) {
+  .service-section {
+    &__image {
+      width: 50% !important;
+      height: auto;
+    }
+  }
+  
+}

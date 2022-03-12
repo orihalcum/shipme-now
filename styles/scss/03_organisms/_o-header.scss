@@ -1,0 +1,40 @@
+.main-header {
+  @include flex-centers;
+  width: 100%;
+  position: fixed;
+  background: radial-gradient(100% 308.25% at 2.56% 100%, #011F48 0%, #022B60 100%);
+  z-index: 2;
+  color: white;
+  height: $header-height;
+  top: 0;
+
+  &.transparent {
+    background: transparent !important;
+  }
+
+  .container {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+
+  }
+
+  &__menu {
+    @include flex-centers;
+    font-weight: 500;
+    font-size: 1rem;
+    ol {
+      list-style: none;
+      li {
+        display: inline;
+        &:not(:first-child) {
+          margin-left: 20px
+        }
+      }
+    }
+  }
+
+}
